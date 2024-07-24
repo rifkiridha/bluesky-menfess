@@ -7,7 +7,7 @@ const path = require('path');
 const { BskyAgent } = require('@atproto/api'); // Import BskyAgent from @atproto/api
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../public')));
