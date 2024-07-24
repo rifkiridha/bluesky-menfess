@@ -7,7 +7,7 @@ const path = require('path');
 const { BskyAgent } = require('@atproto/api'); // Import BskyAgent from @atproto/api
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../public')));
@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 // PostgreSQL connection
 const pool = new Pool({
     user: 'postgres',
-    host: 'localhost',
+    host: 'database-1.cn80yqsiyae5.us-west-2.rds.amazonaws.com',
     database: 'unandfess',
     password: 'postgres',
     port: 5432,
