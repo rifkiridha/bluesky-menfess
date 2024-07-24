@@ -19,6 +19,9 @@ const pool = new Pool({
     database: 'unandfess',
     password: 'postgres',
     port: 5432,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
 // Initialize BskyAgent
